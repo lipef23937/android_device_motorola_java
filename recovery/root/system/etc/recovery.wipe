@@ -1,0 +1,5 @@
+/dev/block/mapper/system_a
+/dev/block/mapper/vendor_a
+/dev/block/by-name/userdata
+/dev/block/by-name/boot_a
+/dev/block/by-name/boot_b
