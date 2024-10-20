@@ -16,6 +16,9 @@ TARGET_BOARD_PLATFORM := ums512
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := p352
 TARGET_NO_BOOTLOADER := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/twrp.fstab
+BOARD_USES_METADATA_PARTITION := true
 
 # CPU Architecture
 TARGET_ARCH := arm64
@@ -53,7 +56,7 @@ ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := 
 endif
 
 # Partition configuration
@@ -108,11 +111,14 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
+TWRP_EVENT_LOGGING := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_FASTBOOTD := true
+TW_USE_TOOLBOX := true
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
