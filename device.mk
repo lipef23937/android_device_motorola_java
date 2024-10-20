@@ -65,9 +65,3 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # GMS Partner ID
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
-
-# Build fingerprint
-BUILD_FINGERPRINT := motorola/java_retail/java:11/RTAS31.68-66-3/66-3:user/release-keys
-# Build description
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="p352_Natv-user 11 RTAS31.68-66-3 66-3 release-keys"
