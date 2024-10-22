@@ -678,3 +678,6 @@ ro.com.android.dataroaming=false
 ro.simlock.unlock.autoshow=0
 ro.simlock.unlock.bynv=0
 ro.simlock.onekey.lock=0
+#
+# RECOVERY UI BUILD PROPERTIES
+#
