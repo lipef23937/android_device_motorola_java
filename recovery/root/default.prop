@@ -237,7 +237,7 @@ ro.build.description=p352_Natv-user 11 RTAS31.68-66-3 66-3 release-keys
 ro.build.fingerprint=motorola/java_retail/java:11/RTAS31.68-66-3/66-3:user/release-keys
 #Moto Prop
 ro.mot.build.guid=7fd3a6a2775cfce
-ro.build.version.full=Ota_Version.31.2.68-36.java_retail.retail.en.US
+ro.build.version.full=Ota_Version.31.2.68-66-3.java_retail.retail.en.US
 ro.mot.ota.reserved.space=2560
 ro.mot.build.product.increment=4
 ro.product.display=moto g²⁰
